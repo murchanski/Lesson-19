@@ -15,7 +15,7 @@ body{
 } 
  
 .conteiner{ 
-    width: 944px; 
+    width: 944px;
 } 
  
 header{ 
@@ -219,4 +219,64 @@ h2{
     color: #828282;
     text-align: center;
     white-space: pre-line;
+}
+
+.img1{
+    display: block;
+}
+
+.img2{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .txt{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ru_eng{
+        display: none;
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: block;
+    }
+    .icons{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .conteiner{
+        justify-content: center;
+    }
+    .menu-burger__header{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 35px;
+        margin-left: 10px;
+    }
+    .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+    }
+    .menu-burger__header span{
+        top: 21px;
+    }
+    .menu-burger__header:after, .menu-burger__header:before{
+        content: '';
+    }
+    .menu-burger__header:after{
+        bottom: 5px;
+    }
+    .menu-burger__header:before{
+        top: 5px;
+    }
+    .header_nav {
+        display: none;
+    }
 }
